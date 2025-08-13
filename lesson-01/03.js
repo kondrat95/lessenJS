@@ -5,9 +5,16 @@
 */
 
 // your code
-let sum = 1;
-while (sum <= 20) {
-   let sum2 = sum % 2;
-    sum = sum + 1;
-   // console.log(sum);
+let sum = 0;
+let i = 1 ;
+while (i <= 20) {
+    if (i % 2 !== 0) {
+        sum = sum + i ;
+
+    }
+
+    i++ ;
+
+
+ console.log(sum);
 }
