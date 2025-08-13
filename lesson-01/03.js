@@ -6,15 +6,11 @@
 
 // your code
 let sum = 0;
-let i = 1 ;
+let i = 1;
+
 while (i <= 20) {
-    if (i % 2 !== 0) {
-        sum = sum + i ;
-
-    }
-
-    i++ ;
-
-
- console.log(sum);
+    sum += i;
+    i += 2;
 }
+
+console.log(sum);
