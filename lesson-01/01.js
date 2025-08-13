@@ -8,5 +8,5 @@ let sum2 = 1;
 while (sum2 < 20) {
     sum2 = sum2 + 1;
     sum = sum + sum2;
-    console.log(sum);
+   // console.log(sum);
 }
