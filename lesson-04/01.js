@@ -13,15 +13,15 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-let array = ['a', 'b', 'c'];
-let element = 'a';
-function includesElement(array) {
+let array = [1, 2, 3];
+let element = 2;
+function includesElement(array, element) {
     for (let i = 0; i < array.length; i++) {
         if (array[i] === element) {
             return true;
         }
     }
-    return false;
+    return false;g
 }
 
 let resalt = includesElement(array);
