@@ -13,6 +13,22 @@
 `findUniqueElements([1, 2, 3, 2, 1, 4])` вернёт `[1, 2, 3, 4]`.
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
-*/
+*
 
-function findUniqueElements() {}
+ */
+
+let arrayNUMBER = [1, 2, 3, 2, 4]
+
+function findUniqueElements (array) {
+    const newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        let element = array[i];
+        if(includesElement(newArray, element) === false) {
+            newArray.push(element);
+        }
+    }
+return newArray;
+}
+
+console.log(findUniqueElements (arrayNUMBER)) ;
+

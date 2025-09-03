@@ -21,7 +21,7 @@ function includesElement(array, element) {
             return true;
         }
     }
-    return false;g
+    return false;
 }
 
 let resalt = includesElement(array);
