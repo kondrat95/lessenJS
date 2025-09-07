@@ -12,23 +12,18 @@
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
 
-let lessen = "str"
-
+let prob = "str"
 function doubleEachCharacter(string) {
-    let stringArray = Array.from(string)
-    let stringArrayNew = [];
-
-    for (let i = 0; i < stringArray.length; i++) {
-        stringArrayNew.push(stringArray[i]);
-        stringArrayNew.push(stringArray[i]);
+    let result = ""
+    for (let i = 0; i < string.length; i++) {
+        result += string[i] + string[i];
     }
 
-   let result = stringArrayNew.join("");
     return result;
 
 };
 
-let good = doubleEachCharacter(lessen);
+let good = doubleEachCharacter(prob);
 console.log(good);
 
 
