@@ -22,7 +22,10 @@ function doubleEachCharacter(string) {
         stringArrayNew.push(stringArray[i]);
         stringArrayNew.push(stringArray[i]);
     }
-    return stringArrayNew;
+
+   let result = stringArrayNew.join("");
+    return result;
+
 };
 
 let good = doubleEachCharacter(lessen);
