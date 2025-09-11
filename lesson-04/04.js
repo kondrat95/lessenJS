@@ -11,20 +11,28 @@
 
 Пример работы функции: `doubleEachCharacter('hello')` вернёт `'hheelllloo'`
 */
+//
+// let prob = "str"
+// function doubleEachCharacter(string) {
+//     let result = ""
+//     for (let i = 0; i < string.length; i++) {
+//         result += string[i] + string[i];
+//     }
+//
+//     return result;
+//
+// };
+//
+// let good = doubleEachCharacter(prob);
+// console.log(good);
 
-let prob = "str"
-function doubleEachCharacter(string) {
-    let result = ""
-    for (let i = 0; i < string.length; i++) {
-        result += string[i] + string[i];
+function sumMix(x){
+    let result = 0;
+    for (let i = 0; i < x.length; i++){
+        result +=  Number(x[i])
     }
+    return result
+}
 
-    return result;
-
-};
-
-let good = doubleEachCharacter(prob);
-console.log(good);
-
-
+console.log(sumMix([9, '1', 8, 2]))
 
