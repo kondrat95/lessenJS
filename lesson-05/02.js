@@ -35,4 +35,11 @@ const gallery = {
   'The Scream': 'Edvard Munch',
 }
 
-function updateGallery() {}
+function updateGallery(objGallery, name, avtor) {
+  objGallery[name] = avtor;
+  return objGallery;
+}
+
+const result = updateGallery(gallery, 'Starry Night', 'Edvard Munch')
+
+console.log(result)
