@@ -22,5 +22,25 @@ const oddNumbers = filter(numbers, (element, index) => {
 
 console.log(oddNumbers) // Должен вывести: [1, 3, 5]
 */
+const array = [1, 2, 3, 4, 5]
 
-const filter = () => {}
+function filter(array, callback) {
+    const newArray = []
+    for (let i = 0; i < array.length; i++) {
+        let item = array[i];
+
+       const result = callback(item,i)
+
+        if (result){
+            newArray.push(item)
+        }
+    }
+
+return newArray
+}
+
+const sum = (element, index) => {
+    return element > 2;
+}
+
+console.log(filter(array, sum));
