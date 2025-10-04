@@ -4,6 +4,9 @@
  */
 
 function isNumeric(str) {
+    if (str === " ") {
+        return false;
+    }
   let num = Number(str)
     console.log(num)
     if (typeof num === "number" && Number.isNaN(num) === false) {
@@ -14,5 +17,5 @@ function isNumeric(str) {
 }
 
 
- console.log(isNumeric("123abc")) // Ожидаемый результат: false
+ console.log(isNumeric(" ")) // Ожидаемый результат: false
 
