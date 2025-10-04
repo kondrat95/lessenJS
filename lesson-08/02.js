@@ -4,6 +4,11 @@
  */
 
 function isNumeric(str) {
+
+    if (typeof str === "number") {
+        return true;
+    }
+    return false;
   // your code
 }
 
