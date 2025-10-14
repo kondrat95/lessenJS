@@ -31,9 +31,8 @@ const countdownDisplay = document.getElementById('countdown')
 
 let isTimerStarted = false
 let timerId
-
+let counter = 3
 startButton.addEventListener('click', () => {
-  let counter = 3
   countdownDisplay.textContent = counter
   if (isTimerStarted === false) {
     isTimerStarted = true
